@@ -25,6 +25,99 @@
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15) !important;
 }
 
+
+/* //hero-section */
+.hero-section {
+    min-height: 530px;
+    background: #f8f9fc;
+    padding: 70px 0;
+}
+
+.hero-section h1 {
+    font-size: 70px;
+}
+
+.hero-section h1 span {
+    color: #087abd !important;
+}
+
+.hero-section p {
+    font-size: 20px;
+}
+
+.saylani-logo {
+    width: 160px;
+}
+
+.hero-laptop {
+    width: 130px;
+    left: 12%;
+    top: 90px;
+ animation: laptopMove 3s ease-in-out infinite;
+
+}
+@keyframes laptopMove {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-15px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.hero-planeDown {
+    width: 230px;
+    left: 10%;
+    bottom: 30px;
+}
+
+.hero-planeUp {
+    width: 230px;
+    right: 12%;
+    top: 100px;
+}
+
+.hero-globe {
+    width: 130px;
+    right: 13%;
+    bottom: 40px;
+   animation: globeMove 3s ease-in-out infinite;
+}
+
+@keyframes globeMove {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(15px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+/* --hero-media-section */
+
+
+
+
+.video-box {
+    width: 100%;
+    max-width: 410px;
+    height: 270px;
+    border-radius: 10%;
+    overflow: hidden;
+}
+/* =========================
+   SMALL MOBILE
+========================= */
+
 @media (max-width: 767px) {
     .enroll-btn {
     background: linear-gradient(to right, #087abd, #8bc34a);
@@ -55,7 +148,6 @@
         overflow-x: hidden;
     }
 
-    /* 5 columns → vertical */
     .mega-menu .row {
         display: block;
     }
@@ -78,12 +170,6 @@
     }
 
 }
-
-
-/* =========================
-   SMALL MOBILE
-========================= */
-
 @media (max-width: 576px) {
 
     .mega-menu {
@@ -109,4 +195,62 @@
         padding: 20px !important;
     }
 
+}
+
+/* HERO-SECTION */
+@media (max-width: 576px) {
+
+    .hero-section {
+        min-height: auto;
+        padding: 40px 10px 20px;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .hero-section h1 {
+        font-size: 38px;
+    }
+
+
+    .hero-section p {
+        font-size: 25px;
+        line-height: 1.2;
+    }
+
+    .saylani-logo {
+        width: 150px;
+        margin-top: 10px;
+    }
+
+    
+        .hero-section .btn {
+        width: 100%;
+    }
+
+    .hero-section .d-flex {
+        flex-direction: column;
+        gap: 10px !important;
+    }
+
+
+    .hero-laptop,
+    .hero-planeDown,
+    .hero-planeUp,
+    .hero-globe {
+        display: none !important;
+    }
+}
+
+/* media-student-section */
+@media (min-width: 768px) and (max-width: 991px) {
+
+    .student-box {
+        display: none;
+    }
+
+    .video-box {
+        width: 450px;
+        height: 270px;
+        margin: auto;
+    }
 }
