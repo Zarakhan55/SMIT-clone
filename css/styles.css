@@ -114,6 +114,103 @@
     border-radius: 10%;
     overflow: hidden;
 }
+/* state section */
+
+.stats-section {
+    background: linear-gradient(to right, #087abd, #8bc34a);
+}
+
+.stats-section h2 {
+    font-size: 48px;
+}
+
+.stats-section p {
+    font-size: 17px;
+}
+
+/* ===== Why Choose SMIT ===== */
+
+
+.why-smit-section {
+    min-height: 650px;
+}
+
+.why-smit-section .container {
+    min-height: 550px;
+}
+
+
+/* Feature Box */
+
+.feature-box {
+    position: absolute;
+    width: 160px;
+}
+.feature-icon {
+    width: 95px;
+    height: 95px;
+    margin: auto;
+    padding: 10px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
+}
+
+.feature-icon:hover {
+    transform: scale(1.08);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.18);
+}
+.feature-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+
+/* Top Features */
+
+.feature-top-left {
+    top: 0;
+    left: 25%;
+}
+
+.feature-top-right {
+    top: 0;
+    right: 25%;
+}
+
+
+/* Center */
+
+.why-smit-content {
+    position: absolute;
+    top: 250px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 60%;
+}
+
+.why-smit-content h2 {
+    font-size: 40px;
+    line-height: 1.3;
+}
+
+
+/* Bottom Features */
+
+.feature-bottom-left {
+    bottom: 0;
+    left: 0;
+}
+
+.feature-bottom-right {
+    bottom: 0;
+    right: 0;
+}
+
+
 /* =========================
    SMALL MOBILE
 ========================= */
