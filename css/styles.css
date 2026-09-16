@@ -128,86 +128,776 @@
     font-size: 17px;
 }
 
-/* ===== Why Choose SMIT ===== */
-
+/* =========================================
+   WHY CHOOSE SMIT SECTION
+========================================= */
 
 .why-smit-section {
-    min-height: 650px;
+    min-height: 700px;
+    padding-top: 80px !important;
+    padding-bottom: 80px !important;
 }
 
 .why-smit-section .container {
-    min-height: 550px;
+    min-height: 600px;
 }
 
 
-/* Feature Box */
+/* =========================================
+   FEATURE CARD
+========================================= */
 
 .feature-box {
     position: absolute;
-    width: 160px;
-}
-.feature-icon {
-    width: 95px;
-    height: 95px;
-    margin: auto;
-    padding: 10px;
-    background: white;
-    border-radius: 12px;
-    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+    width: 180px;
+    text-align: center;
     transition: all 0.3s ease;
 }
 
-.feature-icon:hover {
-    transform: scale(1.08);
-    box-shadow: 0 8px 20px rgba(0,0,0,0.18);
+
+/* =========================================
+   FEATURE ICON
+========================================= */
+
+.feature-icon {
+    width: 100px;
+    height: 100px;
+
+    margin: auto;
+    padding: 10px;
+
+    background: white;
+
+    border-radius: 15px;
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.10);
+
+    transition: all 0.3s ease;
 }
+
+
 .feature-icon img {
     width: 100%;
     height: 100%;
+
     object-fit: contain;
+
+    transition: transform 0.3s ease;
 }
 
 
-/* Top Features */
+/* =========================================
+   TOP LEFT
+========================================= */
 
 .feature-top-left {
     top: 0;
-    left: 25%;
+    left: 20%;
 }
+
+
+/* =========================================
+   TOP RIGHT
+========================================= */
 
 .feature-top-right {
     top: 0;
-    right: 25%;
+    right: 20%;
 }
 
 
-/* Center */
+/* =========================================
+   CENTER CONTENT
+========================================= */
 
 .why-smit-content {
     position: absolute;
-    top: 250px;
+
+    top: 300px;
+
     left: 50%;
+
     transform: translateX(-50%);
 
-    width: 60%;
+    width: 55%;
 }
+
 
 .why-smit-content h2 {
-    font-size: 40px;
-    line-height: 1.3;
+    font-size: 35px;
+
+
+    margin-bottom: 0;
 }
 
 
-/* Bottom Features */
+/* =========================================
+   MIDDLE LEFT
+========================================= */
 
 .feature-bottom-left {
-    bottom: 0;
+    top: 250px;
     left: 0;
 }
 
+
+/* =========================================
+   MIDDLE RIGHT
+========================================= */
+
 .feature-bottom-right {
-    bottom: 0;
+    top: 250px;
     right: 0;
+}
+
+
+/* =========================================
+   BOTTOM LEFT
+========================================= */
+
+.feature-middle-left {
+    top: 500px;
+    left: 20%;
+}
+
+
+/* =========================================
+   BOTTOM RIGHT
+========================================= */
+
+.feature-middle-right {
+    top: 500px;
+    right: 20%;
+}
+
+
+/* =========================================
+   HOVER EFFECT
+========================================= */
+
+.feature-box:hover {
+    transform: translateY(-8px);
+}
+
+
+.feature-box:hover .feature-icon {
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.18);
+}
+
+
+
+.feature-box:hover .feature-icon img {
+    transform: scale(1.08);
+}
+
+
+/* =====================================================
+   TOP COURSES SECTION
+===================================================== */
+
+.top-courses-section {
+    background: #f8f9fc !important;
+    overflow: hidden;
+}
+
+.top-courses-section h2 {
+    font-size: 36px;
+    font-weight: 700;
+    color: #222;
+}
+
+.top-courses-section h2 span {
+    color: #087abd !important;
+}
+
+
+/* =====================================================
+   COURSE CATEGORIES
+===================================================== */
+
+.course-category {
+    text-decoration: none;
+    color: #666;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 12px 10px;
+    transition: 0.3s;
+}
+
+.course-category:hover {
+    color: #087abd;
+}
+
+
+/* =====================================================
+   SLIDER WRAPPER
+===================================================== */
+
+.course-slider {
+    position: relative;
+    width: 100%;
+}
+
+
+/* =====================================================
+   HORIZONTAL SCROLL
+===================================================== */
+
+.course-scroll {
+    display: flex !important;
+    flex-wrap: nowrap !important;
+
+    width: 100%;
+    overflow-x: auto !important;
+    overflow-y: hidden;
+
+    gap: 16px;
+
+    scroll-behavior: smooth;
+
+    margin: 0 !important;
+    padding: 5px 8px 18px;
+
+    scrollbar-width: auto;
+}
+
+
+/* Remove Bootstrap column padding */
+.course-scroll > [class*="col-"] {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+
+/* =====================================================
+   DESKTOP
+   3 CARDS VISIBLE
+===================================================== */
+
+.course-scroll > .col-12 {
+    flex: 0 0 calc((100% - 32px) / 3) !important;
+    max-width: calc((100% - 32px) / 3) !important;
+}
+
+
+/* =====================================================
+   COURSE CARD
+===================================================== */
+
+.course-card {
+    width: 100%;
+    height: 380px !important;
+    min-height: 380px !important;
+    max-height: 380px !important;
+
+    background: #fff;
+
+    border: 1px solid #dfe3e8;
+    border-radius: 8px;
+
+    overflow: hidden;
+
+    transition: 0.3s;
+}
+
+.course-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.10);
+}
+
+
+/* =====================================================
+   COURSE IMAGE
+===================================================== */
+
+.course-image {
+    position: relative;
+
+    width: 100%;
+    height: 180px !important;
+    min-height: 180px !important;
+
+    overflow: hidden;
+}
+
+.course-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    display: block;
+}
+
+
+/* =====================================================
+   ADMISSION BADGE
+===================================================== */
+
+.admission-badge {
+    position: absolute;
+
+    top: 8px;
+    right: 8px;
+
+    display: flex;
+    gap: 2px;
+
+    z-index: 5;
+}
+
+.admission-badge span {
+    background: #087abd;
+    color: #fff;
+
+    font-size: 10px;
+    font-weight: 700;
+
+    padding: 5px 8px;
+
+    border-radius: 15px;
+}
+
+.admission-badge span:last-child {
+    background: #8bc34a;
+}
+
+
+/* =====================================================
+   CARD BODY
+===================================================== */
+
+.course-card .card-body {
+    height: 200px !important;
+    min-height: 200px !important;
+    max-height: 200px !important;
+
+    padding: 17px 16px;
+
+    display: flex;
+    flex-direction: column;
+
+    overflow: hidden !important;
+}
+
+
+/* =====================================================
+   CARD TITLE
+===================================================== */
+
+.course-card .card-title {
+    font-size: 15px;
+
+    font-weight: 600;
+
+    line-height: 1.4;
+
+    color: #222;
+
+    margin-bottom: 10px;
+
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+
+    overflow: hidden;
+}
+
+
+/* =====================================================
+   CARD TEXT
+===================================================== */
+
+.course-card .card-text {
+    color: #777 !important;
+
+    font-size: 13px;
+
+    line-height: 1.4;
+
+    margin-bottom: 10px;
+
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+
+    -webkit-line-clamp: 6;
+
+    overflow: hidden;
+}
+
+
+/* =====================================================
+   BOTTOM AREA
+   ENROLL + DURATION
+===================================================== */
+
+.course-card .mt-auto {
+    margin-top: auto !important;
+
+    flex-shrink: 0;
+
+    width: 100%;
+
+    display: flex !important;
+
+    justify-content: space-between !important;
+
+    align-items: flex-end !important;
+
+    padding-top: 10px;
+}
+
+
+/* =====================================================
+   ENROLL BUTTON
+===================================================== */
+
+.course-card .btn-primary {
+    background: #087abd !important;
+
+    border-color: #087abd !important;
+
+    color: #fff !important;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    padding: 9px 20px;
+
+    border-radius: 25px;
+
+    white-space: nowrap;
+}
+
+.course-card .btn-primary:hover {
+    background: #06699f !important;
+
+    border-color: #06699f !important;
+}
+
+
+/* =====================================================
+   DURATION
+===================================================== */
+
+.course-card .text-end {
+    text-align: right !important;
+
+    flex-shrink: 0;
+
+    min-width: 70px;
+
+    display: block !important;
+
+    visibility: visible !important;
+}
+
+
+.course-card .text-end small {
+    display: block !important;
+
+    color: #777 !important;
+
+    font-size: 12px;
+
+    line-height: 1.3;
+
+    visibility: visible !important;
+}
+
+
+.course-card .text-end strong {
+    display: block !important;
+
+    color: #222 !important;
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+    line-height: 1.4;
+
+    white-space: nowrap;
+
+    visibility: visible !important;
+}
+
+
+
+.course-arrow {
+    position: absolute;
+
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    width: 48px;
+    height: 48px;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background: #fff;
+
+    color: #087abd;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    font-size: 18px;
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+
+    z-index: 20;
+
+    transition: 0.3s;
+}
+
+.course-arrow:hover {
+    background: #087abd;
+
+    color: #fff;
+}
+
+.course-arrow-left {
+    left: -24px;
+}
+
+.course-arrow-right {
+    right: -24px;
+}
+
+
+/* =====================================================
+   TABLET
+   2 CARDS VISIBLE
+===================================================== */
+
+@media (max-width: 991px) {
+
+    .top-courses-section h2 {
+        font-size: 30px;
+    }
+
+    .course-scroll {
+        gap: 16px;
+
+        overflow-x: auto !important;
+        overflow-y: hidden !important;
+
+        padding: 5px 8px 18px;
+    }
+
+    .course-scroll > .col-12 {
+        flex: 0 0 calc((100% - 16px) / 2) !important;
+        max-width: calc((100% - 16px) / 2) !important;
+    }
+
+    .course-card {
+        height: 400px !important;
+        min-height: 400px !important;
+        max-height: 400px !important;
+    }
+
+    .course-image {
+        height: 180px !important;
+        min-height: 180px !important;
+    }
+
+    .course-card .card-body {
+        height: 290px !important;
+        min-height: 290px !important;
+        max-height: 290px !important;
+    }
+
+    .course-arrow-left {
+        left: -10px;
+    }
+
+    .course-arrow-right {
+        right: -10px;
+    }
+}
+
+
+/* =====================================================
+   MOBILE
+   1 CARD VISIBLE
+===================================================== */
+
+@media (max-width: 576px) {
+
+    .top-courses-section {
+        padding-top: 40px !important;
+        padding-bottom: 40px !important;
+    }
+
+    .top-courses-section h2 {
+        font-size: 26px;
+    }
+
+    .course-category {
+        font-size: 14px;
+
+        padding: 8px 7px;
+    }
+
+    .course-scroll {
+        gap: 15px;
+
+        overflow-x: auto !important;
+        overflow-y: hidden !important;
+
+        padding: 5px 5px 18px;
+    }
+
+    .course-scroll > .col-12 {
+        flex: 0 0 100% !important;
+        max-width: 100% !important;
+        width: 100% !important;
+    }
+
+    .course-card {
+        height: 465px !important;
+        min-height: 465px !important;
+        max-height: 465px !important;
+    }
+
+    .course-image {
+        height: 175px !important;
+        min-height: 175px !important;
+    }
+
+    .course-card .card-body {
+        height: 250px !important;
+        min-height: 250px !important;
+        max-height: 250px !important;
+
+        padding: 15px !important;
+    }
+
+    .course-card .card-title {
+        font-size: 15px !important;
+
+        -webkit-line-clamp: 2;
+    }
+
+    .course-card .card-text {
+        font-size: 13px !important;
+
+        line-height: 1.4 !important;
+
+        -webkit-line-clamp: 6 !important;
+    }
+
+    .course-card .btn-primary {
+        font-size: 13px !important;
+
+        padding: 8px 17px !important;
+    }
+
+    .course-card .text-end small {
+        font-size: 11px !important;
+    }
+
+    .course-card .text-end strong {
+        font-size: 12px !important;
+    }
+
+    .course-arrow {
+        width: 38px;
+        height: 38px;
+
+        font-size: 14px;
+    }
+
+    .course-arrow-left {
+        left: -5px;
+    }
+
+    .course-arrow-right {
+        right: -5px;
+    }
+}
+
+
+/* =====================================================
+   VERY SMALL MOBILE
+===================================================== */
+
+@media (max-width: 400px) {
+
+    .top-courses-section h2 {
+        font-size: 23px;
+    }
+
+    .course-card {
+        height: 450px !important;
+        min-height: 450px !important;
+        max-height: 450px !important;
+    }
+
+    .course-image {
+        height: 165px !important;
+        min-height: 165px !important;
+    }
+
+    .course-card .card-body {
+        height: 285px !important;
+        min-height: 285px !important;
+        max-height: 285px !important;
+
+        padding: 13px !important;
+    }
+
+    .course-card .card-text {
+        -webkit-line-clamp: 5 !important;
+    }
+
+    .course-card .btn-primary {
+        padding: 7px 14px !important;
+
+        font-size: 12px !important;
+    }
+
+    .course-card .text-end small {
+        font-size: 10px !important;
+    }
+
+    .course-card .text-end strong {
+        font-size: 11px !important;
+    }
+}
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 576px) {
+
+    .top-courses-section {
+        padding: 40px 15px !important;
+    }
+
+    .top-courses-section h2 {
+        font-size: 27px;
+    }
+
+    .course-category {
+        font-size: 14px;
+    }
+
+    .course-image {
+        height: 210px;
+    }
+
+    .course-card .card-title {
+        font-size: 15px;
+    }
+
 }
 
 
@@ -351,3 +1041,138 @@
         margin: auto;
     }
 }
+
+/* =========================================
+   MOBILE RESPONSIVE - SCREENSHOT STYLE
+========================================= */
+
+@media (max-width: 576px) {
+
+    .why-smit-section {
+        min-height: 950px;
+        padding: 30px 15px !important;
+    }
+
+    .why-smit-section .container {
+        min-height: 900px;
+        position: relative;
+        width: 100%;
+    }
+
+
+    /* =====================================
+       CENTER HEADING
+    ===================================== */
+
+    .why-smit-content {
+        position: absolute;
+
+        top: 0;
+        left: 50%;
+
+        transform: translateX(-50%);
+
+        width: 100%;
+    }
+
+    .why-smit-content h2 {
+        font-size: 25px;
+        line-height: 1.15;
+
+        margin-top: 15px !important;
+    }
+
+    .why-smit-content .badge {
+        font-size: 13px !important;
+        padding: 8px 16px !important;
+    }
+
+
+    /* =====================================
+       ALL CARDS
+    ===================================== */
+
+    .feature-box {
+        position: absolute;
+
+        width: 45%;
+
+        text-align: center;
+    }
+
+
+    /* =====================================
+       CARD ICON
+    ===================================== */
+
+    .feature-icon {
+        width: 80px;
+        height: 80px;
+
+        padding: 8px;
+
+        border-radius: 12px;
+    }
+
+    .feature-box h6 {
+        font-size: 14px;
+        line-height: 1.25;
+
+        margin-top: 10px !important;
+    }
+
+    .feature-box p {
+        font-size: 13px;
+        line-height: 1.3;
+    }
+
+
+    /* =====================================
+       FIRST ROW
+       Hands-On + Employment
+    ===================================== */
+
+    .feature-top-left {
+        top: 260px;
+        left: 2%;
+    }
+
+    .feature-top-right {
+        top: 260px;
+        right: 2%;
+    }
+
+
+    /* =====================================
+       SECOND ROW
+       Affordable + Startups
+    ===================================== */
+
+    .feature-bottom-left {
+        top: 475px;
+        left: 2%;
+    }
+
+    .feature-bottom-right {
+        top: 475px;
+        right: 2%;
+    }
+
+
+    /* =====================================
+       THIRD ROW
+       Cisco + Pakistan Largest
+    ===================================== */
+
+    .feature-middle-left {
+        top: 690px;
+        left: 2%;
+    }
+
+    .feature-middle-right {
+        top: 690px;
+        right: 2%;
+    }
+
+}
+
