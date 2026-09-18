@@ -824,9 +824,1238 @@
 }
 
 
+
+/* =========================================
+   STUDENT REVIEWS SECTION
+========================================= */
+
+.student-reviews-section {
+    background: #f8f9fc;
+    overflow: hidden;
+}
+
+
+/* LEFT BADGE */
+
+.review-badge {
+    display: inline-block;
+    background: #087abd;
+    color: #ffffff;
+    padding: 6px 16px;
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 18px;
+}
+
+
+/* HEADING */
+
+.review-title {
+    font-size: 32px;
+    line-height: 1.15;
+    font-weight: 700;
+    color: #111111;
+    margin-bottom: 28px;
+}
+
+
+/* =========================================
+   ARROWS
+========================================= */
+
+.review-arrows {
+    display: flex;
+    gap: 14px;
+}
+
+.review-arrow {
+    width: 48px;
+    height: 48px;
+
+    border: 1px solid #d5dbe2;
+    background: transparent;
+
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #333;
+    font-size: 16px;
+
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+}
+
+.review-arrow:hover {
+    background: #087abd;
+    border-color: #087abd;
+    color: #ffffff;
+}
+
+
+/* =========================================
+   VIDEO SLIDER
+========================================= */
+
+.review-slider {
+    width: 100%;
+    overflow: hidden;
+}
+
+.review-scroll {
+    display: flex;
+    flex-wrap: nowrap;
+
+    gap: 24px;
+
+    overflow-x: auto;
+    overflow-y: hidden;
+
+    scroll-behavior: smooth;
+
+    padding: 5px 0 10px;
+
+    scrollbar-width: none;
+}
+
+.review-scroll::-webkit-scrollbar {
+    display: none;
+}
+
+
+/* =========================================
+   VIDEO CARD
+========================================= */
+
+.review-video {
+    position: relative;
+
+    flex: 0 0 280px;
+
+    width: 280px;
+    height: 320px;
+
+    border-radius: 15px;
+
+    overflow: hidden;
+
+    background: #ddd;
+
+    cursor: pointer;
+}
+
+
+/* IMAGE */
+
+.review-video img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+
+/* =========================================
+   BLUE BOTTOM GRADIENT
+========================================= */
+
+.video-overlay {
+    position: absolute;
+
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    height: 35%;
+
+    background: linear-gradient(
+        to top,
+        rgba(0, 123, 190, 0.95),
+        rgba(0, 123, 190, 0)
+    );
+
+    pointer-events: none;
+}
+
+
+/* =========================================
+   PLAY BUTTON
+========================================= */
+
+.play-button {
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    width: 66px;
+    height: 66px;
+
+    border: none;
+    border-radius: 50%;
+
+    background: rgba(255, 255, 255, 0.9);
+
+    color: #087abd;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 25px;
+
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+}
+
+.play-button i {
+    margin-left: 4px;
+}
+
+.play-button:hover {
+    transform: translate(-50%, -50%) scale(1.08);
+
+    background: #ffffff;
+}
+
+
+/* =========================================
+   HOVER
+========================================= */
+
+.review-video {
+    transition: transform 0.3s ease;
+}
+
+.review-video:hover {
+    transform: translateY(-5px);
+}
+
+/* =========================================
+   CAMPUS SECTION
+========================================= */
+
+.campus-section {
+    background: #f8f9fc;
+    overflow: hidden;
+}
+
+
+/* HEADING */
+
+.campus-heading {
+    margin-bottom: 15px;
+}
+
+.campus-badge {
+    display: inline-block;
+    background: #087abd;
+    color: #fff;
+    padding: 5px 14px;
+    border-radius: 30px;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.campus-heading h2 {
+    font-size: 30px;
+    color: #111;
+    margin-bottom: 8px;
+}
+
+.campus-heading p {
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+
+/* =========================================
+   MAP
+========================================= */
+
+.campus-map {
+    width: 100%;
+    max-width: 750px;
+    height: 480px;
+
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pakistan-map {
+    width: 600px;
+    max-width: 90%;
+    height: auto;
+
+    display: block;
+}
+
+
+/* =========================================
+   BUTTON
+========================================= */
+
+.campus-button {
+    background: #087abd;
+    border: none;
+
+    color: #fff !important;
+
+    font-size: 18px;
+    font-weight: 700;
+
+    transition: .3s;
+}
+
+.campus-button:hover {
+    background: #06699f;
+    color: #fff !important;
+    transform: translateY(-2px);
+}
+
+/* =========================================
+   SUCCESS STORIES
+========================================= */
+
+.success-stories-section {
+    width: 100%;
+    overflow: hidden;
+}
+
+
+/* =========================================
+   MAIN SECTION
+========================================= */
+
+.success-stories {
+    position: relative;
+
+    width: 100%;
+    height: 495px;
+
+    background: linear-gradient(
+        110deg,
+        #087abd 0%,
+        #3c9e9d 48%,
+        #8bc34a 100%
+    );
+
+    overflow: hidden;
+}
+
+
+/* =========================================
+   ALUMNI COLLAGE
+========================================= */
+
+.alumni-collage {
+    position: absolute;
+
+    top: 35px;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    width: 1200px;
+    max-width: none;
+
+    height: auto;
+
+    z-index: 2;
+}
+
+
+/* =========================================
+   CENTER TEXT
+========================================= */
+
+.success-content {
+    position: absolute;
+
+    left: 50%;
+    top: 72%;
+
+    transform: translate(-50%, -50%);
+
+    width: 800px;
+    max-width: 90%;
+
+    text-align: center;
+
+    z-index: 5;
+}
+
+
+.success-content h2 {
+    margin: 0 0 12px;
+
+    color: #ffffff;
+
+    font-size: 36px;
+
+    line-height: 1.15;
+
+    font-weight: 700;
+}
+
+
+.success-content p {
+    margin: 0;
+
+    color: rgba(255, 255, 255, 0.9);
+
+    font-size: 18px;
+
+    line-height: 1.5;
+}
+
+/* =========================================
+   SMIT VISION SECTION
+========================================= */
+
+.vision-section {
+    background: #f8f9fc;
+}
+
+
+/* =========================================
+   HEADING
+========================================= */
+
+.vision-heading {
+    margin-bottom: 65px;
+}
+
+.vision-heading h2 {
+    margin: 0 0 8px;
+
+    font-size: 36px;
+    font-weight: 700;
+
+    color: #111;
+}
+
+.vision-heading h2 span {
+    color: #087abd;
+}
+
+.vision-heading p {
+    margin: 0;
+
+    font-size: 19px;
+    line-height: 1.5;
+
+    color: #666;
+}
+
+.vision-heading p strong {
+    color: #087abd;
+    font-weight: 700;
+}
+
+
+/* =========================================
+   CARDS
+========================================= */
+
+.vision-card {
+    min-height: 335px;
+
+    background: #ffffff;
+
+    border: 1px solid #eeeeee;
+
+    border-radius: 24px;
+
+    padding: 40px;
+
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.02);
+
+    transition: all 0.3s ease;
+}
+
+.vision-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+
+/* =========================================
+   ICON
+========================================= */
+
+.vision-icon {
+    width: 64px;
+    height: 64px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #087abd;
+
+    color: #ffffff;
+
+    border-radius: 15px;
+
+    font-size: 27px;
+
+    margin-bottom: 32px;
+}
+
+
+/* =========================================
+   NUMBER
+========================================= */
+
+.vision-card h3 {
+    margin: 0;
+
+    color: #087abd;
+
+    font-size: 32px;
+
+    font-weight: 700;
+}
+
+
+/* =========================================
+   SUB HEADING
+========================================= */
+
+.vision-card h5 {
+    margin-top: 2px;
+    margin-bottom: 22px;
+
+    color: #087abd;
+
+    font-size: 18px;
+
+    font-weight: 700;
+}
+
+.vision-card h5 span {
+    font-size: 20px;
+}
+
+
+/* =========================================
+   DESCRIPTION
+========================================= */
+
+.vision-card p {
+    margin: 0;
+
+    max-width: 500px;
+
+    color: #34495e;
+
+    font-size: 16px;
+
+    line-height: 1.6;
+}
+/* =========================================
+   BE A PART OF THIS VISION
+========================================= */
+
+.vision-cta-section {
+    background: #f8f9fc;
+}
+
+
+/* =========================================
+   CTA BOX
+========================================= */
+
+.vision-cta {
+    background: linear-gradient(
+        110deg,
+        #087abd 0%,
+        #3f9d9b 50%,
+        #8bc34a 100%
+    );
+
+    border-radius: 24px;
+
+    padding: 48px 30px;
+
+    min-height: 300px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    overflow: hidden;
+}
+
+
+/* =========================================
+   HEADING
+========================================= */
+
+.vision-cta h2 {
+    color: #ffffff;
+
+    font-size: 36px;
+    font-weight: 700;
+
+    margin-bottom: 20px;
+}
+
+
+/* =========================================
+   DESCRIPTION
+========================================= */
+
+.vision-cta p {
+    color: #ffffff;
+
+    font-size: 19px;
+    line-height: 1.5;
+
+    margin-bottom: 30px;
+}
+
+
+/* =========================================
+   BUTTONS
+========================================= */
+
+.vision-cta-buttons {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 15px;
+}
+
+
+/* ABOUT BUTTON */
+
+.about-btn {
+    background: #ffffff;
+
+    color: #087abd !important;
+
+    border: 2px solid #ffffff;
+
+    padding: 12px 22px;
+
+    font-size: 16px;
+    font-weight: 600;
+
+    box-shadow: 0 3px 8px rgba(0,0,0,.08);
+
+    transition: .3s;
+}
+
+.about-btn:hover {
+    background: transparent;
+
+    color: #ffffff !important;
+
+    transform: translateY(-2px);
+}
+
+
+/* ENROLL BUTTON */
+
+.enroll-vision-btn {
+    background: transparent;
+
+    color: #ffffff !important;
+
+    border: 2px solid #ffffff;
+
+    padding: 12px 25px;
+
+    font-size: 16px;
+    font-weight: 600;
+
+    transition: .3s;
+}
+
+.enroll-vision-btn:hover {
+    background: #ffffff;
+
+    color: #087abd !important;
+
+    transform: translateY(-2px);
+}
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 991px) {
+
+    .vision-cta {
+        padding: 45px 25px;
+    }
+
+    .vision-cta h2 {
+        font-size: 31px;
+    }
+
+    .vision-cta p {
+        font-size: 17px;
+    }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 576px) {
+
+    .vision-cta-section {
+        padding-top: 40px !important;
+        padding-bottom: 40px !important;
+    }
+
+    .vision-cta {
+        min-height: 350px;
+
+        padding: 40px 20px;
+
+        border-radius: 20px;
+    }
+
+    .vision-cta h2 {
+        font-size: 25px;
+
+        line-height: 1.2;
+
+        margin-bottom: 15px;
+    }
+
+    .vision-cta p {
+        font-size: 14px;
+
+        line-height: 1.6;
+
+        margin-bottom: 25px;
+    }
+
+    .vision-cta-buttons {
+        width: 100%;
+
+        flex-direction: column;
+
+        gap: 12px;
+    }
+
+    .about-btn,
+    .enroll-vision-btn {
+        width: 100%;
+
+        max-width: 280px;
+
+        font-size: 14px;
+
+        padding: 10px 18px;
+    }
+
+
+}
+/* =========================================
+   FOOTER
+========================================= */
+
+.site-footer {
+    background: #242424;
+    color: #aeb4bd;
+}
+
+
+/* =========================================
+   MAIN FOOTER
+========================================= */
+
+.footer-main {
+    padding-top: 32px;
+    padding-bottom: 25px;
+}
+
+
+/* =========================================
+   LOGOS
+========================================= */
+
+.footer-logos {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+
+    margin-bottom: 18px;
+}
+
+.smit-footer-logo {
+    width: 85px;
+    height: auto;
+}
+
+.saylani-footer-logo {
+    width: 155px;
+    height: auto;
+}
+
+
+/* =========================================
+   DESCRIPTION
+========================================= */
+
+.footer-description {
+    max-width: 300px;
+
+    font-size: 16px;
+    line-height: 1.6;
+
+    color: #aeb4bd;
+
+    margin-bottom: 25px;
+}
+
+
+/* =========================================
+   CONTACT
+========================================= */
+
+.footer-contact {
+    margin-bottom: 22px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: flex-start;
+
+    gap: 13px;
+
+    margin-bottom: 15px;
+
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.contact-item i {
+    width: 18px;
+
+    color: #087abd;
+
+    font-size: 17px;
+
+    margin-top: 2px;
+}
+
+.contact-item:nth-child(2) i {
+    color: #8bc34a;
+}
+
+
+/* =========================================
+   SOCIAL MEDIA
+========================================= */
+
+.footer-social {
+    display: flex;
+
+    gap: 12px;
+
+    margin-bottom: 24px;
+}
+
+.footer-social a {
+    width: 40px;
+    height: 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #303030;
+
+    color: #9da3ab;
+
+    border-radius: 50%;
+
+    text-decoration: none;
+
+    transition: .3s;
+}
+
+.footer-social a:hover {
+    background: #087abd;
+    color: #ffffff;
+
+    transform: translateY(-3px);
+}
+
+
+/* =========================================
+   GOOGLE PLAY
+========================================= */
+
+.google-play-btn {
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    background: linear-gradient(
+        90deg,
+        #087abd,
+        #8bc34a
+    );
+
+    color: #ffffff !important;
+
+    text-decoration: none;
+
+    border-radius: 10px;
+
+    padding: 8px 16px;
+
+    min-width: 157px;
+
+    transition: .3s;
+}
+
+.google-play-btn:hover {
+    transform: translateY(-2px);
+}
+
+.google-play-btn > i {
+    font-size: 27px;
+}
+
+.google-play-btn span {
+    display: flex;
+
+    flex-direction: column;
+
+    font-size: 17px;
+
+    font-weight: 600;
+
+    line-height: 1.1;
+}
+
+.google-play-btn small {
+    font-size: 8px;
+
+    font-weight: 400;
+
+    letter-spacing: .3px;
+}
+
+
+/* =========================================
+   FOOTER COLUMNS
+========================================= */
+
+.footer-column {
+    padding-top: 2px;
+}
+
+.footer-column h5 {
+    position: relative;
+
+    color: #ffffff;
+
+    font-size: 18px;
+
+    font-weight: 700;
+
+    padding-bottom: 12px;
+
+    margin-bottom: 15px;
+}
+
+
+/* GREEN UNDERLINE */
+
+.footer-column h5::after {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    bottom: 0;
+
+    width: 45px;
+    height: 3px;
+
+    background: linear-gradient(
+        90deg,
+        #087abd,
+        #8bc34a
+    );
+
+    border-radius: 5px;
+}
+
+
+.footer-column ul {
+    list-style: none;
+
+    padding: 0;
+    margin: 0;
+}
+
+.footer-column li {
+    margin-bottom: 14px;
+}
+
+.footer-column a {
+    color: #aeb4bd;
+
+    text-decoration: none;
+
+    font-size: 15px;
+
+    transition: .3s;
+}
+
+.footer-column a:hover {
+    color: #ffffff;
+
+    padding-left: 3px;
+}
+
+
+/* =========================================
+   BOTTOM BAR
+========================================= */
+
+.footer-bottom {
+    border-top: 1px solid #3b3b3b;
+
+    padding: 22px 0;
+}
+
+.footer-bottom p {
+    margin: 0;
+
+    color: #9ea5ae;
+
+    font-size: 14px;
+}
+
+.footer-bottom strong {
+    color: #ffffff;
+}
+
+.footer-bottom a {
+    color: #9ea5ae;
+
+    text-decoration: none;
+
+    font-size: 14px;
+
+    margin-left: 25px;
+
+    transition: .3s;
+}
+
+.footer-bottom a:hover {
+    color: #ffffff;
+}
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 991px) {
+
+    .success-stories {
+        height: 460px;
+    }
+
+    .alumni-collage {
+        width: 1000px;
+        top: 35px;
+    }
+
+    .success-content {
+        top: 72%;
+    }
+
+    .success-content h2 {
+        font-size: 30px;
+    }
+
+    .success-content p {
+        font-size: 16px;
+    }
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 576px) {
+
+    .success-stories {
+        height: 430px;
+    }
+
+    .alumni-collage {
+        width: 760px;
+        max-width: none;
+
+        top: 35px;
+    }
+
+    .success-content {
+        top: 70%;
+
+        width: 90%;
+    }
+
+    .success-content h2 {
+        font-size: 24px;
+
+        line-height: 1.2;
+    }
+
+    .success-content p {
+        font-size: 14px;
+
+        line-height: 1.5;
+    }
+}
+
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 400px) {
+
+    .success-stories {
+        height: 400px;
+    }
+
+    .alumni-collage {
+        width: 700px;
+        top: 30px;
+    }
+
+    .success-content {
+        top: 69%;
+    }
+
+    .success-content h2 {
+        font-size: 21px;
+    }
+
+    .success-content p {
+        font-size: 13px;
+    }
+}
+@media (max-width: 991px) {
+
+    .campus-heading h2 {
+        font-size: 28px;
+    }
+
+    .campus-map {
+        height: 350px;
+    }
+
+    .pakistan-map {
+        width: 470px;
+    }
+}
+
+
+@media (max-width: 576px) {
+
+    .campus-section {
+        padding-top: 40px !important;
+        padding-bottom: 40px !important;
+    }
+
+    .campus-heading h2 {
+        font-size: 24px;
+    }
+
+    .campus-heading p {
+        font-size: 12px;
+        padding: 0 10px;
+    }
+
+    .campus-map {
+        height: 300px;
+    }
+
+    .pakistan-map {
+        width: 390px;
+        max-width: 95%;
+    }
+
+    .campus-button {
+        font-size: 11px;
+        padding: 8px 16px !important;
+    }
+}
+
+
+@media (max-width: 400px) {
+
+    .campus-heading h2 {
+        font-size: 21px;
+    }
+
+    .campus-map {
+        height: 270px;
+    }
+
+    .pakistan-map {
+        width: 350px;
+    }
+}
+@media (max-width: 991px) {
+
+    .student-reviews-section .col-lg-4 {
+        text-align: center;
+    }
+
+    .review-badge {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .review-title {
+        text-align: center;
+    }
+
+    .review-arrows {
+        justify-content: center;
+    }
+
+}
 /* =====================================================
    VERY SMALL MOBILE
 ===================================================== */
+
 
 @media (max-width: 400px) {
 

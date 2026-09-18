@@ -20,3 +20,15 @@ function scrollCourses(direction) {
     });
 
 }
+//review section==========//
+function scrollReviews(direction) {
+
+    const slider = document.getElementById("reviewSlider");
+
+    const scrollAmount = 304;
+
+    slider.scrollBy({
+        left: direction * scrollAmount,
+        behavior: "smooth"
+    });
+}
